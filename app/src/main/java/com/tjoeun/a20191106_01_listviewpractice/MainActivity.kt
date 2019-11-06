@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         addNotice()
 
-        adapter = NoticeAdapter(this,R.layout.notice_list_item,noticeArrayList)
-        noticeListView.adapter
+        adapter = NoticeAdapter(this,noticeArrayList)
+        noticeListView.adapter = adapter
     }
 
     fun addNotice(){
